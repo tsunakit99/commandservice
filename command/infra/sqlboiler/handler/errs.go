@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/tsunakit99/commandservice/command/errs"
+	"github.com/tsunakit99/commandservice/errs"
 
 	"github.com/go-sql-driver/mysql"
 )

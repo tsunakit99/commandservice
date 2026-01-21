@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"unicode/utf8"
 
-	"github.com/tsunakit99/commandservice/command/errs"
+	"github.com/tsunakit99/commandservice/errs"
 )
 
 // 商品番号を保持する値オブジェクト(UUID)

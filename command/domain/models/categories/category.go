@@ -2,7 +2,7 @@ package categories
 
 import (
 	"github.com/google/uuid"
-	"github.com/tsunakit99/commandservice/command/errs"
+	"github.com/tsunakit99/commandservice/errs"
 )
 
 // 商品カテゴリを保持するエンティティ

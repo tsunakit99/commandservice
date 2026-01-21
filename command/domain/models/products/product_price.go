@@ -3,7 +3,7 @@ package products
 import (
 	"fmt"
 
-	"github.com/tsunakit99/commandservice/command/errs"
+	"github.com/tsunakit99/commandservice/errs"
 )
 
 // 商品価格を保持する値オブジェクト

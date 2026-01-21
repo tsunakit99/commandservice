@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"unicode/utf8"
 
-	"github.com/tsunakit99/commandservice/command/errs"
+	"github.com/tsunakit99/commandservice/errs"
 )
 
 // カテゴリIDを保持する値オブジェクト
