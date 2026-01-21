@@ -2,8 +2,8 @@ package products
 
 import (
 	"github.com/google/uuid"
+	"github.com/tsunakit99/commandservice/command/errs"
 	"github.com/tsunakit99/commandservice/domain/models/categories"
-	"github.com/tsunakit99/commandservice/errs"
 )
 
 // 商品エンティティ
