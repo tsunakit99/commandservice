@@ -1,0 +1,9 @@
+FROM golang:1.25.6-alpine3.23
+RUN apk update && apk add git curl alpine-sdk nodejs npm
+RUN npm install -g @openai/codex
+RUN go install github.com/aarondl/sqlboiler/v4@latest \
+ && go install github.com/aarondl/sqlboiler/v4/drivers/sqlboiler-mysql@latest \
+ && go install github.com/onsi/ginkgo/v2/ginkgo@latest
+RUN mkdir -p /go/src/commandservice
+WORKDIR /go/src/commandservice
+ADD . /go/src/commandservice
