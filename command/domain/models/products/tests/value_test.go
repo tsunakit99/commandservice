@@ -4,8 +4,8 @@ import (
 	"github.com/google/uuid"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/tsunakit99/commandservice/domain/models/products"
-	"github.com/tsunakit99/commandservice/errs"
+	"github.com/tsunakit99/commandservice/command/domain/models/products"
+	"github.com/tsunakit99/commandservice/command/errs"
 )
 
 var _ = Describe("Productエンティティを構成する値オブジェクト", Ordered, Label("ProductId構造体の生成"), func() {

@@ -1,8 +1,8 @@
 package categories_tests
 
 import (
-	"github.com/tsunakit99/commandservice/domain/models/categories"
-	"github.com/tsunakit99/commandservice/errs"
+	"github.com/tsunakit99/commandservice/command/domain/models/categories"
+	"github.com/tsunakit99/commandservice/command/errs"
 
 	"github.com/google/uuid"
 	. "github.com/onsi/ginkgo/v2"

@@ -1,9 +1,9 @@
 package products_tests
 
 import (
-	"github.com/tsunakit99/commandservice/domain/models/categories"
-	"github.com/tsunakit99/commandservice/domain/models/products"
-	"github.com/tsunakit99/commandservice/errs"
+	"github.com/tsunakit99/commandservice/command/domain/models/categories"
+	"github.com/tsunakit99/commandservice/command/domain/models/products"
+	"github.com/tsunakit99/commandservice/command/errs"
 
 	. "github.com/onsi/ginkgo/v2"
 
