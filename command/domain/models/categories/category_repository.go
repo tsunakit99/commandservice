@@ -11,7 +11,7 @@ type CategoryRepository interface {
 	// 新しいカテゴリを永続化する
 	Create(ctx context.Context, tran *sql.Tx, category *Category) error
 	// カテゴリを変更する
-	UpedateById(ctx context.Context, tran *sql.Tx, category *Category) error
+	UpdateById(ctx context.Context, tran *sql.Tx, category *Category) error
 	// カテゴリを削除する
 	DeleteById(ctx context.Context, tran *sql.Tx, category *Category) error
 }
