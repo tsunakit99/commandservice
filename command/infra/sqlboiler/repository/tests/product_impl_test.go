@@ -22,7 +22,7 @@ var _ = Describe("productRepositorySQLBoiler構造体", Ordered, Label("ProductR
 	// 前処理
 	BeforeAll(func() {
 		// リポジトリの生成
-		rep = repository.NewProductRepositorySQLBoiler() // Repositoryの生成
+		rep = repository.NewproductRepositorySQLBoiler() // Repositoryの生成
 		// カテゴリエンティティの生成
 		category_id, _ := categories.NewCategoryId("b1524011-b6af-417e-8bf2-f449dd58b5c0")
 		category_name, _ := categories.NewCategoryName("文房具")
