@@ -64,7 +64,7 @@ func (ins *categoryAdapterImpl) ToResult(result any) *pb.CategoryUpResult {
 	case *errs.CRUDError: // 実行結果がCRUDErrorの場合
 		up_err = &pb.Error{Type: "CRUD Error", Message: v.Error()}
 	case *errs.InternalError: // 実行結果がInternalErrorの場合
-		up_err = &pb.Error{Type: "Internal Error", Message: "内部エラーが発生しました。"}
+		up_err = &pb.Error{Type: "Internal Error", Message: "只今、サービスを提供できません。"}
 	}
 	return &pb.CategoryUpResult{Category: up_category, Error: up_err, Timestamp: timestamppb.Now()}
 }
