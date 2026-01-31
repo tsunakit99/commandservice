@@ -13,6 +13,7 @@ require (
 	github.com/onsi/gomega v1.39.0
 	github.com/tsunakit99/samplepb v0.0.0-20251212003317-a2bf736d6919
 	go.uber.org/fx v1.24.0
+	google.golang.org/protobuf v1.36.10
 )
 
 require (
@@ -37,5 +38,4 @@ require (
 	golang.org/x/xerrors v0.0.0-20220609144429-65e65417b02f // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20251022142026-3a174f9686a8 // indirect
 	google.golang.org/grpc v1.77.0 // indirect
-	google.golang.org/protobuf v1.36.10 // indirect
 )
