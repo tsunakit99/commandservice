@@ -9,14 +9,14 @@ import (
 )
 
 // パラメータと実行結果の変換インターフェイスの実装
-type productAdapaterImpl struct{}
+type productAdapterImpl struct{}
 
-func NewproductAdapaterImpl() ProductAdapter {
-	return &productAdapaterImpl{}
+func NewproductAdapterImpl() ProductAdapter {
+	return &productAdapterImpl{}
 }
 
 // ProductUpParamからProductに変換する
-func (ins *productAdapaterImpl) ToEntity(param *pb.ProductUpParam) (*products.Product, error) {
+func (ins *productAdapterImpl) ToEntity(param *pb.ProductUpParam) (*products.Product, error) {
 	// コマンド種別別のエンティティ生成
 	switch param.GetCrud() {
 	case pb.CRUD_INSERT:
@@ -67,7 +67,7 @@ func (ins *productAdapaterImpl) ToEntity(param *pb.ProductUpParam) (*products.Pr
 }
 
 // サービス実行結果からProductUpResultに変換する
-func (ins *productAdapaterImpl) ToResult(result any) *pb.ProductUpResult {
+func (ins *productAdapterImpl) ToResult(result any) *pb.ProductUpResult {
 	var up_product *pb.Product
 	var up_err *pb.Error
 	switch v := result.(type) {

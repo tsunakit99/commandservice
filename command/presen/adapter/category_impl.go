@@ -9,7 +9,7 @@ import (
 
 type categoryAdapterImpl struct{}
 
-func NewCategoryAdapterImpl() CategoryAdapter {
+func NewcategoryAdapterImpl() CategoryAdapter {
 	return &categoryAdapterImpl{}
 }
 
