@@ -15,7 +15,7 @@ type productServer struct {
 }
 
 // コンストラクタ
-func NewProductServer(adapter adapter.ProductAdapter, service service.ProductService) pb.ProductCommandServer {
+func NewproductServer(adapter adapter.ProductAdapter, service service.ProductService) pb.ProductCommandServer {
 	return &productServer{adapter: adapter, service: service}
 }
 
